@@ -22,7 +22,7 @@ def read_incidence_matrix(file_tsv: str) -> dict:
                     collection_dict[set_id_str].append(str(i))
     return collection_dict
 
-example = "/nfs/research/petsalaki/users/platon/SPMap/TrieSUS_fork/tests/examples/sets_1.tsv"
+example = "/nfs/research/petsalaki/users/platon/SPMap/TrieSUS_fork/tests/examples/sets5.tsv"
 
 ### cover_set_extended.py
 
@@ -330,15 +330,25 @@ class TrieSUS(Trie):
 
 ### run_triesus.py
 
-def run_triesus(collection_tsv: str) -> None:
+def run_triesus_tsv(collection_tsv: str) -> None:
     collection_dict = read_collection(collection_tsv)
     triesus = TrieSUS(collection_dict)
     for key, item in triesus.collection.items():
         #print(item)
         sus = triesus.find_sus(item)
-        sus = str(sus)
+        sus = ' '.join([str(elem) for i,elem in enumerate(sus)])
         print(f"{key}\t{sus}")
 
+def run_triesus_pipeline(collection_dict: str) -> dict:
+    #collection_dict = read_collection(collection_tsv)
+    triesus = TrieSUS(collection_dict)
+    result = {}
+    for key, item in triesus.collection.items():
+        sus = triesus.find_sus(item)
+        #sus = "\t".join(sus)
+        #print(f"{key}\t{sus}")
+        result[key] = sus
+    return result
 
 ### naive_sus_extended.py
 
@@ -379,5 +389,7 @@ def naive_sus_extended(sets_dict: dict, set_key: str):
 def naive_sus(sets_dict: dict):
     for set_key in sets_dict.keys():
         sus = naive_sus_extended(sets_dict, set_key)
-        sus = str(sus)
+        sus = ' '.join([str(elem) for i,elem in enumerate(sus)])
         print(f"{set_key}\t{sus}")
+
+sc_example = "/nfs/research/petsalaki/users/platon/SPMap/TrieSUS_fork/tests/examples/sets_sc.tsv"

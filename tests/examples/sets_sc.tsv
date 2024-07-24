@@ -1,0 +1,12 @@
+Bladder	Actb	Actg1	Hsp90ab1	Hspa8	Itm2b	Sparc	Tm4sf1
+Brain_Non-Myeloid	Actb	Actg1	Bsg	Cldn5	Esam	Flt1	Hsp90ab1	Itm2b	Ly6e	Slc2a1	Sparc
+Fat	Actb	Actg1	B2m	Cd36	Esam	Hsp90ab1	Hspa8	Itm2b	Ly6e	Sparc
+Heart	Actb	B2m	Eng	Hsp90ab1	Itm2b	Sparc	Tm4sf1
+Heart_and_Aorta	Actb	Actg1	B2m	Egfl7	Eng	Hsp90ab1	Itm2b	Sparc	Tm4sf1
+Kidney	Actb	Actg1	B2m	Emcn	Hsp90ab1	Hspa8	Itm2b	Ly6e	Tm4sf1
+Limb_Muscle	Actb	Actg1	B2m	Hsp90ab1	Hspa8	Itm2b
+Liver	Actb	Aqp1	B2m	Eng	Gpihbp1	Itm2b	Mrc1	Ptprb	Sparc
+Lung	Actb	B2m	Cldn5	Itm2b	Ly6e	Ramp2	Tspan7
+Mammary_Gland	Actb	Actg1	B2m	Emp1	Hsp90ab1	Hspa8	Itm2b	Tm4sf1
+Pancreas	Actb	B2m	Emcn	Eng	Esam	Hsp90ab1	Itm2b	Plvap	Sparc
+Trachea	Actb	Actg1	B2m	Hsp90ab1	Hspa8	Itm2b	Ly6e	Tm4sf1
