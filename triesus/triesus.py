@@ -3,7 +3,7 @@
 
 from collections import Counter
 from triesus.trie import *
-from triesus.cover_set import solve_cover_set
+from triesus.cover_set_extended import solve_cover_set
 
 
 class TrieSUS(Trie):

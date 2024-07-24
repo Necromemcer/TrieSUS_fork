@@ -13,3 +13,7 @@ if __name__ == "__main__":
     run_triesus('tests/examples/sets4.tsv')
     print('tests/examples/sets5.tsv')
     run_triesus('tests/examples/sets5.tsv')
+    print('tests/examples/sets_ambiguous.tsv')
+    run_triesus('tests/examples/sets_ambiguous.tsv')    
+    print('tests/examples/sets_sc.tsv')
+    run_triesus('tests/examples/sets_sc.tsv')    
