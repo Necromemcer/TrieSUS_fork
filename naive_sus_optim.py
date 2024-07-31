@@ -138,9 +138,9 @@ def read_collection(file_tsv: str) -> dict:
 # 	toc = time.perf_counter()
 # 	print(f"Elapsed time:{toc-tic:0.3f} seconds")
 
-def run_naive_sus(collection_dict: str):
+def run_naive_sus(collection_tsv: str):
     tic = time.perf_counter()
-    #collection_dict = read_collection(collection_tsv)
+    collection_dict = read_collection(collection_tsv)
     results = naive_sus(collection_dict)
     for set_key, sus_list in results:
         for sus in sus_list:
