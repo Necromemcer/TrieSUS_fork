@@ -48,5 +48,5 @@ def find_sus(sets_dict: dict, set_key: str):
 def naive_sus(sets_dict: dict):
     for set_key in sets_dict.keys():
         sus = find_sus(sets_dict, set_key)
-        sus = "\t".join(sus)
+        sus = ' '.join([str(elem) for i,elem in enumerate(sus)])
         print(f"{set_key}\t{sus}")
